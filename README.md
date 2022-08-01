@@ -1,2 +1,1 @@
-# Trading bot
-Bas itna kaafi hai
+This is the Project for Web Development regarding Stock Market.
