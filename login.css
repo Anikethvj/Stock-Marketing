@@ -1,0 +1,136 @@
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#particles-js {
+  position: relative;
+  width: 200vh;
+  height: 95vh;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+#login-holder
+{
+  width: 55%;
+  height: 420px;
+  margin: 170px 340px;
+  border-radius: 7px;
+  z-index: 100;
+  position: absolute;
+}
+
+#login-left
+{
+  width: 60%;
+  height: 420px;
+  background-color: #21282c;
+  float:left;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+#login-right
+{
+  width: 40%;
+  height: 420px;
+  float:right;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-image: url(bullblack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+#login-form{
+  display: grid;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+
+#username-field, #password-field{
+  border: none;
+  background-color: #696969;
+  border-radius: 4px;
+  width: 200px;
+   
+}
+@keyframes field{
+  0%{
+    width: 200px;
+    height: 17px;
+  }
+  100%{
+    width:210px;
+    height: 25px;
+  }
+}
+#username-field:hover, #password-field:hover{
+  animation: field 1s ease;
+  width:210px;
+  height: 25px;
+}
+::placeholder{
+  color: BLACK;
+}
+
+#social{
+  padding-left: 172px;
+}
+
+.login-head{
+  display:grid;
+  justify-items:center; 
+  color:#2E8B57; 
+  font-size: 25px;
+  font-family:sans-serif; 
+  font-weight: bold;
+}
+
+#login-form-submit{
+    
+    display: inline-block;
+    overflow: hidden;
+    background-color: 	#2E8B57;
+    border: none;
+    border-radius: 4px;
+    padding:6px 25px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    width:100px;
+}
+
+#login-form-submit:hover{
+  background-position: right center;
+  color: blue;
+  text-decoration: none;
+}
+
+#fgt-pass{
+  display: grid;
+  justify-items: center;
+  font-size:x-small;
+  color: #d3d3d3;
+  padding-left: 1.3in;
+  text-decoration: none;
+  font-family: 'Trebuchet MS';
+}
+
+#new-usr{
+  display: grid;
+  justify-items: center;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS';
+}

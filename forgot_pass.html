@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="forgot_pass.css">
+<script>
+    function myFunction() {
+        alert("Details have been sent to the registered Email Address");
+    }
+</script>
+<head>
+  <title>
+    Reset Password
+  </title>
+</head>
+<body>
+  <div id="reset_pass_holder">
+    <img src="forgot.jpg" alt="forgot password" height="200px" width="300px">
+      <p style="display:grid; text-align: center; padding-top: 20px; font-size: 18px; color: #d3d3d3;;">Please Enter Email ID</p>
+    <form id="reset-form">
+        <input type="text" name="username" id="username-field" placeholder="Email ID">
+        <br>
+        <input onclick="location.href = 'login.html'; myFunction()" type="button" value="Submit" id="forgot-pass-submit">
+    </form>
+  </div>
+</body>
+</html>

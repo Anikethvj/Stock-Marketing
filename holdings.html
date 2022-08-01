@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Holdings</title>
+        <link rel="stylesheet" href="holdings.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer src="holdings.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header-left">
+            <p >Nifty</p>
+            <p class="data" style="color: red; "><span id="data_nifty"></span></p>&emsp;
+            <script type="text/javascript">
+              setInterval(myFunction, 1000);
+              function myFunction(){
+              var x = Math.abs(Math.random() * 20 + 15713.85);
+              document.getElementById("data_nifty").innerHTML = parseFloat(x).toFixed(2); 
+              }
+        </script>
+            
+            <p >Sensex</p>
+            <p class="data" style="color: #3cff00; "><span id="data_sensex"></span></p>&emsp;
+            <script type="text/javascript">
+              setInterval(myFunction, 1000);
+              function myFunction(){
+              var x = Math.abs(Math.random() * 20 + 23456.34);
+              document.getElementById("data_sensex").innerHTML = parseFloat(x).toFixed(2); 
+              }
+        </script>
+            </div>
+            <div id="header-logo">
+                <img src="Logo.jpg" alt="logo">
+        
+            </div>
+            <div id="header-right">
+                <p><a href="profile.html">Profile &nbsp;</a></p>
+                <p><a href="holdings.html">Holdings &nbsp;</a></p>
+                <p><a href="watchlist.html">Wachlist &nbsp;</a></p>
+                <p><a href="Wallet.html">Wallet &nbsp;</a></p>
+                <p><a href="Dashboard.html">Dashboard &nbsp;</a></p>  
+                </ul>
+            </div>
+            
+        </header>
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "description": "",
+        "proName": "BSE:SENSEX"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:AMZN"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:FB"
+      },
+      {
+        "description": "",
+        "proName": "NYSE:TWTR"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:MSFT"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:AAPL"
+      },
+      {
+        "description": "",
+        "proName": "NYSE:UL"
+      },
+      {
+        "description": "",
+        "proName": "NYSE:DIS"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:NFLX"
+      },
+      {
+        "description": "",
+        "proName": "NYSE:AXP"
+      },
+      {
+        "description": "",
+        "proName": "BSE:SBIN"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "in"
+  }
+    </script>
+        <div id="body-options">
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <table id="main_table">
+            <tr>
+              <th id="th_name">Inventory</th>
+              <th id="th_qty">Quantity</th>
+              <th id="th_cst">Cost</th>
+              <th id="th_ltp">LTP</th>
+              <th id="th_pl">P&L</th>
+            </tr>
+            <tr>
+              <td>RIL</td>
+              <td>28</td>
+              <td>1500.5</td>
+              <td>2090.25</td>
+              <td style="color: rgb(23, 231, 23);">+590.25</td>  
+            </tr>
+            <tr>
+              <td>SBIN</td>
+              <td>69</td>
+              <td>400.0</td>
+              <td>420.0</td>
+              <td style="color: rgb(23, 231, 23);">+20.0</td>  
+            </tr>
+            <tr>
+              <td>TATA</td>
+              <td>80</td>
+              <td>350.6</td>
+              <td>301.85</td>
+              <td style="color: rgb(253, 63, 29);">-48.25</td>  
+            </tr>
+            <tr>
+              <td>HDFC</td>
+              <td>17</td>
+              <td>1604.7</td>
+              <td>1444.0</td>
+              <td style="color: rgb(253, 63, 29);">-160.7</td>  
+            </tr>
+            <tr>
+              <td>WIPRO</td>
+              <td>73</td>
+              <td>510.6</td>
+              <td>567.05</td>
+              <td style="color: rgb(23, 231, 23);">+57.55</td>  
+            </tr>
+          </table>
+          <div id="piechart" style="height: 100px; width: 100px; padding-left: 890px; z-index: -100; position:absolute; top:50px; left:80px; "></div>
+        </div>
+        
+        <button class="openbtn" onclick="openNav()">&#9776; Stocks</button>
+        <h2></h2>
+        <p></p>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+        </div>
+        
+        <button class="openbtn" onclick="openNav()">&#9776; Mutual Funds</button>
+        <h2></h2>
+        <p></p>
+
+        
+        <button class="openbtn" onclick="openNav()">&#9776; Cryptocurrency</button>
+        <h2></h2>
+        <p></p>
+        </div>
+        
+        
+        </div>
+        </div>
+        <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container" style="margin-left: 250px; margin-top: 105px; z-index: -200; overflow: hidden; position: absolute;">
+        <div class="tradingview-widget-container__widget"></div>
+        
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+        {
+        "interval": "1W",
+        "width": 430,
+        "isTransparent": false,
+        "height": 450,
+        "symbol": "FX_IDC:INRUSD",
+        "showIntervalTabs": true,
+        "locale": "in",
+        "colorTheme": "dark"
+      }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="margin-left: 730px; margin-top: 105px; z-index: -200; overflow: hidden;">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+  {
+  "width": 700,
+  "height": 450,
+  "defaultColumn": "overview",
+  "screener_type": "crypto_mkt",
+  "displayCurrency": "BTC",
+  "colorTheme": "dark",
+  "locale": "in"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+    </body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html >
+    <link rel="stylesheet" href="watchlist.css">
+<head>
+
+    <title>watchlist</title>
+</head>
+<body>
+
+  <header>
+    <div id="header-left">
+    <p >Nifty</p>
+    <p class="data" style="color: red; "><span id="data_nifty"></span></p>&emsp;
+    <script type="text/javascript">
+      setInterval(myFunction, 1000);
+      function myFunction(){
+      var x = Math.abs(Math.random() * 20 + 15713.85);
+      document.getElementById("data_nifty").innerHTML = parseFloat(x).toFixed(2); 
+      }
+</script>
+    
+    <p >Sensex</p>
+    <p class="data" style="color: #3cff00; "><span id="data_sensex"></span></p>&emsp;
+    <script type="text/javascript">
+      setInterval(myFunction, 1000);
+      function myFunction(){
+      var x = Math.abs(Math.random() * 20 + 23456.34);
+      document.getElementById("data_sensex").innerHTML = parseFloat(x).toFixed(2); 
+      }
+</script>
+    </div>
+    <div id="header-logo">
+        <img src="Logo.jpg" alt="logo">
+
+    </div>
+    <div id="header-right">
+        <p><a href="profile.html">Profile &nbsp;</a></p>
+        <p><a  href="holdings.html">Holdings &nbsp;</a></p>
+        <p><a href="watchlist.html">Watchlist &nbsp;</a></p>
+        <p><a href="Wallet.html">Wallet &nbsp;</a></p>
+        <p><a href="Dashboard.html">Dashboard &nbsp;</a></p>  
+        </ul>
+    </div>
+    
+</header>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "",
+      "proName": "BSE:SENSEX"
+    },
+    {
+      "description": "",
+      "proName": "NASDAQ:AMZN"
+    },
+    {
+      "description": "",
+      "proName": "NASDAQ:FB"
+    },
+    {
+      "description": "",
+      "proName": "NYSE:TWTR"
+    },
+    {
+      "description": "",
+      "proName": "NASDAQ:MSFT"
+    },
+    {
+      "description": "",
+      "proName": "NASDAQ:AAPL"
+    },
+    {
+      "description": "",
+      "proName": "NYSE:UL"
+    },
+    {
+      "description": "",
+      "proName": "NYSE:DIS"
+    },
+    {
+      "description": "",
+      "proName": "NASDAQ:NFLX"
+    },
+    {
+      "description": "",
+      "proName": "NYSE:AXP"
+    },
+    {
+      "description": "",
+      "proName": "BSE:SBIN"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "in"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+    <div class="main">
+        <div class="left-side">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "dark",
+    "dateRange": "12M",
+    "showChart": true,
+    "locale": "in",
+    "largeChartUrl": "https://in.tradingview.com/chart/",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "width": "532",
+    "height": "720",
+    "plotLineColorGrowing": "rgba(0, 255, 0, 1)",
+    "plotLineColorFalling": "rgba(255, 0, 0, 1)",
+    "gridLineColor": "rgba(240, 243, 250, 0)",
+    "scaleFontColor": "rgba(120, 123, 134, 1)",
+    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+    "tabs": [
+      {
+        "title": "Indices",
+        "symbols": [
+          {
+            "s": "BSE:SENSEX"
+          },
+          {
+            "s": "FOREXCOM:SPXUSD"
+          },
+          {
+            "s": "FOREXCOM:NSXUSD"
+          },
+          {
+            "s": "FOREXCOM:DJI"
+          }
+        ],
+        "originalTitle": "Indices"
+      },
+      {
+        "title": "Commodities",
+        "symbols": [
+          {
+            "s": "CME_MINI:ES1!",
+            "d": "S&P 500"
+          },
+          {
+            "s": "CME:6E1!",
+            "d": "Euro"
+          },
+          {
+            "s": "COMEX:GC1!",
+            "d": "Gold"
+          },
+          {
+            "s": "NYMEX:CL1!",
+            "d": "Crude Oil"
+          },
+          {
+            "s": "NYMEX:NG1!",
+            "d": "Natural Gas"
+          },
+          {
+            "s": "CBOT:ZC1!",
+            "d": "Corn"
+          }
+        ],
+        "originalTitle": "Commodities"
+      },
+      {
+        "title": "Bonds",
+        "symbols": [
+          {
+            "s": "CME:GE1!",
+            "d": "Eurodollar"
+          },
+          {
+            "s": "CBOT:ZB1!",
+            "d": "T-Bond"
+          },
+          {
+            "s": "CBOT:UB1!",
+            "d": "Ultra T-Bond"
+          },
+          {
+            "s": "EUREX:FGBL1!",
+            "d": "Euro Bund"
+          },
+          {
+            "s": "EUREX:FBTP1!",
+            "d": "Euro BTP"
+          },
+          {
+            "s": "EUREX:FGBM1!",
+            "d": "Euro BOBL"
+          }
+        ],
+        "originalTitle": "Bonds"
+      },
+      {
+        "title": "Forex",
+        "symbols": [
+          {
+            "s": "FX:EURUSD"
+          },
+          {
+            "s": "FX:GBPUSD"
+          },
+          {
+            "s": "FX:USDJPY"
+          },
+          {
+            "s": "FX:USDCHF"
+          },
+          {
+            "s": "FX:AUDUSD"
+          },
+          {
+            "s": "FX:USDCAD"
+          }
+        ],
+        "originalTitle": "Forex"
+      }
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</div>
+        
+
+
+
+
+<!-- right-side -->
+
+
+
+
+
+
+
+        <div class="right-side">
+
+<div id="split">
+    <!-- TradingView stock Graph Widget BEGIN -->
+    <div class="tradingview-widget-container" id="left-widget" >
+      <div id="tradingview_1d618"></div>
+      
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.MediumWidget(
+      {
+      "symbols": [
+        [
+          "Apple",
+          "AAPL"
+        ],
+        [
+          "Google",
+          "GOOGL"
+        ],
+        [
+          "Microsoft",
+          "MSFT"
+        ],
+        [
+          "Amazon",
+          "NASDAQ:AMZN|12M"
+        ],
+        [
+          "Facebook",
+          "NASDAQ:FB|12M"
+        ],
+        [
+          "Twitter",
+          "NYSE:TWTR|12M"
+        ],
+        [
+          "Unilever",
+          "NYSE:UL|12M"
+        ],
+        [
+          "Disney",
+          "NYSE:DIS|12M"
+        ],
+        [
+          "Netflix",
+          "NASDAQ:NFLX|12M"
+        ],
+        [
+          "American express",
+          "NYSE:AXP|12M"
+        ],
+        [
+          "SBI",
+          "BSE:SBIN|12M"
+        ]
+      ],
+      "chartOnly": false,
+      "width": "600",
+      "height": "400",
+      "locale": "in",
+      "colorTheme": "dark",
+      "gridLineColor": "rgba(42, 46, 57, 0)",
+      "trendLineColor": "rgba(73, 133, 231, 1)",
+      "fontColor": "#787b86",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": false,
+      "autosize": false,
+      "container_id": "tradingview_1d618"
+    }
+      );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  
+    <!-- TradingView Analysis Widget BEGIN -->
+    <!-- <div class="tradingview-widget-container" id="right-widget">
+      
+      
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+      "interval": "1m",
+      "width": 387,
+      "isTransparent": false,
+      "height": 400,
+      "symbol": "NASDAQ:AAPL",
+      "showIntervalTabs": true,
+      "locale": "in",
+      "colorTheme": "dark"
+    }
+      </script>
+    </div> -->
+    <!-- TradingView Widget END -->
+    <div id="right-widget">
+      <img src="watchlist image.png" alt="" style="height: 398px; width: 387px;padding-top: 2px;">
+    </div>
+</div>
+
+
+
+
+  
+  <!-- TradingView currency Widget BEGIN -->
+  <div class="tradingview-widget-container" >
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+    {
+    "width": 987,
+    "height": 320,
+    "currencies": [
+      "EUR",
+      "USD",
+      "JPY",
+      "GBP",
+      "AUD",
+      "INR"
+    ],
+    "isTransparent": false,
+    "colorTheme": "dark",
+    "locale": "in"
+  }
+    </script>
+  </div>
+
+<!-- TradingView Widget END -->
+        </div>
+    </div>
+
+</body>
+</html>
