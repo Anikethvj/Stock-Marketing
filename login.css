@@ -1,34 +1,15 @@
-
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-#particles-js {
-  position: relative;
-  width: 200vh;
-  height: 95vh;
-  background-color: #000000;
+body{
+  background-image: url(graph2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -100;
 }
 
 #login-holder
 {
   width: 55%;
-  height: 420px;
-  margin: 170px 340px;
+  height:420px;
+  margin: 110px auto;
   border-radius: 7px;
-  z-index: 100;
-  position: absolute;
 }
 
 #login-left
@@ -57,36 +38,19 @@
   justify-items: center;
   margin-top: 10px;
 }
-
-
-#username-field, #password-field{
+input{
   border: none;
   background-color: #696969;
   border-radius: 4px;
-  width: 200px;
-   
+  width: 200px; 
 }
-@keyframes field{
-  0%{
-    width: 200px;
-    height: 17px;
-  }
-  100%{
-    width:210px;
-    height: 25px;
-  }
-}
-#username-field:hover, #password-field:hover{
-  animation: field 1s ease;
-  width:210px;
-  height: 25px;
-}
+
 ::placeholder{
   color: BLACK;
 }
 
 #social{
-  padding-left: 172px;
+  padding-left: 155px;
 }
 
 .login-head{
@@ -99,23 +63,18 @@
 }
 
 #login-form-submit{
-    
     display: inline-block;
     overflow: hidden;
     background-color: 	#2E8B57;
     border: none;
     border-radius: 4px;
+    transition: opacity 0.5s;
     padding:6px 25px;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: black;
     width:100px;
 }
 
 #login-form-submit:hover{
-  background-position: right center;
-  color: blue;
-  text-decoration: none;
+  opacity: 0.7;
 }
 
 #fgt-pass{
@@ -130,7 +89,8 @@
 
 #new-usr{
   display: grid;
+  align-self: flex-start;
   justify-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: 'Trebuchet MS';
 }

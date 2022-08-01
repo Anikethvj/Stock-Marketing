@@ -1,21 +1,15 @@
-
-#particles-js {
-  position: relative;
-  width: 200vh;
-  height: 95vh;
-  background-color: #000000;
-  background-repeat: no-repeat;
+body{
+  background-image: url(graph2.jpg);
   background-size: cover;
-  z-index: -100;
+  padding-top: 100px;
   font-family:sans-serif;
-} 
+}   
 #signup-holder{
   width:65%;
   height:500px;
-  margin: 120px 300px;
+  margin:35px auto;
   border-radius: 7px;
   background-color: rgb(44, 44, 44) ;  
-  position: absolute;
 }
 #signup-left{
   width: 40%;
